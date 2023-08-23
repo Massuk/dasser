@@ -1,0 +1,65 @@
+<body>
+  <div class="form-wrapper">
+    <div class="container">
+      <div class="login-card">
+        <div class="card-body">
+          <div class="logo">
+            <img src="../../../../assets/img/logo.png" alt="logo" />
+          </div>
+          <div class="my-4 text-center">
+            <h5>Iniciar sesión</h5>
+          </div>
+          <form>
+            <div class="form-group">
+              <label for="text">Usuario</label>
+              <div class="form-icon-wrapper">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="login"
+                  placeholder="Ingresa tu usuario"
+                  autofocus
+                  required
+                  [formControl]="login"
+                />
+                <i class="form-icon-left mdi mdi-account"></i>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password">Contraseña</label>
+              <div class="form-icon-wrapper">
+                <input
+                  #inputElement
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Ingresa tu contraseña"
+                  required
+                  [formControl]="password"
+                />
+                <i class="form-icon-left mdi mdi-lock"></i>
+                <a
+                  class="form-icon-right password-show-hide"
+                  title="Hide or show password"
+                  (mousedown)="onPasswordIconMouseDown()"
+                  (mouseup)="onPasswordIconMouseUp()"
+                >
+                  <i class="mdi mdi-eye"></i>
+                </a>
+              </div>
+            </div>
+            <div class="form-group my-4">
+              <button class="btn btn-primary btn-block" (click)="signIn()">
+                Ingresar
+              </button>
+            </div>
+            <p class="text-center">
+              ¿No tienes una cuenta?
+              <a href="sign-up.html"> Regístrate</a>.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

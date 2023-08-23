@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import "~@angular/cdk/overlay-prebuilt.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  margin: 1.25rem 0 1.25rem 0;
+  box-shadow: 0 0.25rem 0.5rem #e6edef;
+  color: #495057;
+
+  .card-head {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #edf1f7;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .card-body {
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  transition: background-color 0.03s ease-in-out, color 0.03s ease-in-out;
+  box-shadow: 0 0.25rem 0.5rem #e6edef;
+
+  &.accept {
+    background-color: #212121;
+
+    &:hover {
+      background-color: #3866AE;
+      color: #ffffff;
+    }
+  }
+
+  &.cancel {
+    background-color: #b71c1c;
+    margin-left: 10px;
+
+    &:hover {
+      background-color: #eb1515;
+      color: #fff;
+    }
+  }
+}
+
+
+.separate {
+  margin-left: 2rem;
+}
+
+
+.tshadow {
+  text-shadow: 0px 4px 7px  black;
+}
+
+// Barra de busqueda
+.search-container {
+  position: relative;
+
+  .normal-search {
+    .search {
+      border: none;
+      height: 2.375rem;
+      padding-left: 2.5rem;
+      padding-right: 1.25rem;
+      background-color: #f3f3f9;
+      box-shadow: none;
+      border-radius: 1.875rem;
+      outline: 0;
+    }
+
+    .search-icon {
+      position: absolute;
+      font-size: 1rem;
+      line-height: 2.375rem;
+      left: 0.813rem;
+      top: 0;
+      color: #74788d;
+    }
+  }
+
+  .search-menu-btn {
+    font-size: 18px;
+    height: 42px;
+    width: 42px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    outline: 0;
+  }
+
+  .search-menu-btn:hover,
+  .search-menu-btn:focus {
+    .search-icon {
+      color: #699dfa;
+    }
+  }
+}
