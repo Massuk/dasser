@@ -15,6 +15,8 @@ import { UserUpdateComponent } from '../user-update/user-update.component';
 })
 export class UserListComponent implements OnInit {
   innerWidth: any;
+  idUser: number = 0;
+
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
     this.innerWidth = window.innerWidth;
@@ -57,6 +59,7 @@ export class UserListComponent implements OnInit {
   filter(event: any) {
     this.dataSource.filter = event.target.value.trim();
   }
+  
   clearFilter() {
     this.dataSource.filter = '';
   }
@@ -69,11 +72,11 @@ export class UserListComponent implements OnInit {
     });
   }
 
-  showUpdateUserPopup(): void {
+  showUpdateUserPopup(idUser: number): void {
     const dialogRef = this.dialog.open(UserUpdateComponent, {
       height: 'auto',
       width: '555px',
-      data: {},
+      data: { idUser: idUser },
     });
   }
   

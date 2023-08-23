@@ -23,6 +23,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { CommonModule, DatePipe } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { MatChipsModule } from '@angular/material/chips';
+
 
 // Components
 import { AppRoutingModule } from './app-routing.module';
@@ -79,7 +81,8 @@ import { UserUpdateComponent } from './component/entities/user/user-update/user-
     ReactiveFormsModule,
     OverlayModule,
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

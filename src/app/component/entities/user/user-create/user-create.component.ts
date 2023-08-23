@@ -48,6 +48,7 @@ export class UserCreateComponent implements OnInit {
           this.uS.setList(data);
         });
       });
+      this.closeDialog();
       this.router.navigate(['dashboard/users']);
     }
   }

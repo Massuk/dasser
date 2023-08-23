@@ -27,7 +27,7 @@ export class UserUpdateComponent implements OnInit {
 
   ngOnInit(): void {
     this.uS.getUserData().subscribe((userData: any) => {
-      this.idUser = userData.idUser;
+      this.idUser = this.data.idUser;
       this.loadUserData();
     });
 
@@ -67,13 +67,11 @@ export class UserUpdateComponent implements OnInit {
       name: this.user.name,
       lastname: this.user.lastname,
       login: this.user.login,
-      password: this.user.password,
       status: this.user.status,
     });
   }
 
   togglePasswordVisibility(): void {
-    console.log('Toggle password visibility');
     this.hidePassword = !this.hidePassword;
   }
   
