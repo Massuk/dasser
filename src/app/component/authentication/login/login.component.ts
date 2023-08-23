@@ -56,6 +56,7 @@ export class LoginComponent implements OnInit {
   }
 
   signIn() {
+    console.log(this.login.value);
     let request = new JwtRequest();
     request.username = this.login.value;
     request.password = this.password.value;

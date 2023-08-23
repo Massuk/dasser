@@ -34,7 +34,6 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { EntitiesComponent } from './component/entities/entities.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './component/authentication/login/login.component';
-import { RegisterComponent } from './component/authentication/register/register.component';
 import { BodyComponent } from './component/dashboard/body/body.component';
 import { HeaderComponent } from './component/dashboard/header/header.component';
 import { SidenavComponent } from './component/dashboard/sidenav/sidenav.component';
@@ -51,7 +50,6 @@ import { UserUpdateComponent } from './component/entities/user/user-update/user-
     DashboardComponent,
     EntitiesComponent,
     LoginComponent,
-    RegisterComponent,
     BodyComponent,
     HeaderComponent,
     SidenavComponent,

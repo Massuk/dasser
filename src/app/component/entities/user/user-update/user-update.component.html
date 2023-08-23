@@ -96,27 +96,6 @@
           </div>
         </div>
 
-        <div class="row my-2">
-          <mat-form-field appearance="outline">
-            <mat-label class="box-text">Estado</mat-label>
-            <mat-select
-              placeholder="Estado"
-              formControlName="status"
-              type="text"
-              required
-              #gender
-            >
-              <mat-option value="ACTIVO">ACTIVO</mat-option>
-              <mat-option value="BLOQUEADO">BLOQUEADO</mat-option>
-              <mat-option value="ELIMINADO">ELIMINADO</mat-option>
-            </mat-select>
-            <mat-error *ngIf="form.controls['status'].invalid"
-              >El estado es obligatorio</mat-error
-            >
-            <mat-icon matSuffix>group</mat-icon>
-          </mat-form-field>
-        </div>
-
         <mat-card-actions class="buttons-container">
           <div class="button-group">
             <button class="accept button">
